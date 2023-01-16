@@ -17,10 +17,8 @@ recognition.onresult = function(event) {
 var Content = event.results[0][0].transcript;
 
     Textbox.innerHTML = Content;
-    console.log(Content);
       if(Content =="tire minha selfie")
       {
-        console.log("tirando selfie --- ");
         speak();
       }
 }
